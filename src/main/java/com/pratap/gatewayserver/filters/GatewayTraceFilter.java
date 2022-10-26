@@ -13,9 +13,9 @@ import reactor.core.publisher.Mono;
 
 @Order(1)
 @Component
-public class TraceFilter implements GlobalFilter {
+public class GatewayTraceFilter implements GlobalFilter {
 
-    private static final Logger logger = LoggerFactory.getLogger(TraceFilter.class);
+    private static final Logger logger = LoggerFactory.getLogger(GatewayTraceFilter.class);
 
     @Autowired
     private FilterUtility filterUtility;
